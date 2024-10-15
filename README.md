@@ -1,7 +1,7 @@
 ## MERN STACK ASSIGNMENT DOCUMENTATION
 
 ### Frontend 
-Developed various responsive pages Home Page, Register Page, Login Page, Task Page along with Logout Functionality.![Screenshot 2024-10-12 142218](https://github.com/user-attachments/assets/664b7fc8-dde1-4edf-8845-faf740d70aee)
+Developed various responsive pages Home Page, Register Page, Login Page, Task Page along with Logout Functionality.
 
 
 ### Backend APIs For User Authentication
