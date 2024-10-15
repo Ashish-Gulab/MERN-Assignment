@@ -1,5 +1,55 @@
 ## MERN STACK ASSIGNMENT DOCUMENTATION
-### Backend APIs
+
+### Backend APIs For User Authentication
+These API allows users to register, login, and retrieve authentication tokens. Below is a detailed description of each endpoint.
+
+### Base URL
+http://localhost:8000/api/v1/auth
+
+### End Points
+#### Register User
+#### POST('/register')
+This endpoint registers a new user and saves the user's information in the database.
+  #### URL: 'http://localhost:8000/api/v1/auth/register'
+  #### Method: POST
+  #### Headers:
+    Content-Type: application/json
+  #### Body:
+    {
+      "name": "Ashish Gulab",
+      "email": "ashishgulab.gulab@gmail.com",
+      "password":"123456",
+      "phone: "8791449487",
+      :address": "Bijnor, Uttar Pradesh"
+    }
+  #### Response: 
+  #### 201 Created:
+    {
+      "success": true,
+      "message": "User Register Successfully",
+      "user": {
+          "_id": ObjectId('670e0cc9c86f58a8b292a446'),
+          "name": "Ashish Gulab",
+          "email": "ashishgulab.gulab@gmail.com",
+          "password":"$2b$10$0nkoDqs8Y/6s8LZonyJ7WuFHShDMpGe2N9dhjshtVorja1j/A8si",
+          "phone: "8791449487",
+          :address": "Bijnor, Uttar Pradesh"
+          "createdAt": "2024-10-15T06:33:45.939+00:00"
+        }
+      }
+
+   #### 200 OK(Conflict):
+        {
+          "success": false,
+          "message": "Already Registered Please Login"
+        }
+
+  #### 400 Bad Request:
+        {
+          "message": "Name is required"
+        }
+
+### Backend APIs For Task Management
 These APIs allow users to create, view, update, and delete tasks. Below is a detailed description of the endpoints.
 
 ### Base URL
