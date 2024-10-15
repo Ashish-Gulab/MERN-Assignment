@@ -110,8 +110,8 @@ This endpoint is getting the single task stored in the database.
 
 #### Updating the Task
 #### PUT('/update-task/:id')
-This endpoint is update the task stored in the database.
-  #### URL: 'http://localhost:8000/api/v1/task/update-task/java-programming'
+This endpoint update the task stored in the database.
+  #### URL: 'http://localhost:8000/api/v1/task/update-task/670e0d7ac86f58a8b292a44d'
   #### Method: PUT
   #### Headers:
     Content-Type: application/json
@@ -144,6 +144,25 @@ This endpoint is update the task stored in the database.
         {
           "success": false,
           "message": "Error while updating the task",
+          "error": {}
+        }
+
+#### Deleting the Task
+#### DELETE('/delete-task/:id')
+This endpoint delete the task stored in the database.
+  #### URL: 'http://localhost:8000/api/v1/task/delete-task/670e0d7ac86f58a8b292a44d'
+  #### Method: DELETE
+  #### Response: 
+  #### 200 OK:
+    {
+      "success": true,
+      "message": "Task deleted successfully",
+    }
+
+  #### 500 Internal Server Error:
+        {
+          "success": false,
+          "message": "Error while deleting the task",
           "error": {}
         }
 
