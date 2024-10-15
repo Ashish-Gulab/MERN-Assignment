@@ -1,5 +1,8 @@
 ## MERN STACK ASSIGNMENT DOCUMENTATION
 
+### Frontend 
+Developed various responsive pages Home Page, Register Page, Login Page, Task Page along with Logout Functionality.
+
 ### Backend APIs For User Authentication
 These API allows users to register, login, and retrieve authentication tokens. Below is a detailed description of each endpoint.
 
