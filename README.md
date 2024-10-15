@@ -49,6 +49,54 @@ This endpoint registers a new user and saves the user's information in the datab
           "message": "Name is required"
         }
 
+#### Login User
+#### POST('/login')
+This endpoint authenticates an existing user and generates a JWT token for further access.
+  #### URL: 'http://localhost:8000/api/v1/auth/login'
+  #### Method: POST
+  #### Headers:
+    Content-Type: application/json
+  #### Body:
+    {
+      "email": "ashishgulab.gulab@gmail.com",
+      "password":"123456",
+    }
+  #### Response: 
+  #### 200 OK:
+    {
+      "success": true,
+      "message": "Login Successfully",
+      "user": {
+          "_id": ObjectId('670e0cc9c86f58a8b292a446'),
+          "name": "Ashish Gulab",
+          "email": "ashishgulab.gulab@gmail.com",
+          "password":"$2b$10$0nkoDqs8Y/6s8LZonyJ7WuFHShDMpGe2N9dhjshtVorja1j/A8si",
+          "phone: "8791449487",
+          :address": "Bijnor, Uttar Pradesh"
+          "createdAt": "2024-10-15T06:33:45.939+00:00"
+        },
+        "token": "nR7s7IkpXVCJ9.eyJtrgHhkssOBlMGNjOdshyuFJY1OGE4Yj5mE0NDYijddukscxOjEMj5ODEzOTUsImG4cCI6MTcyOTU4NjE5NX0.wAdjxYVIdjksjks8YUTITCQSM"
+      }
+
+  #### 404 Not Found (Invalid Email):
+        {
+          "success": false,
+          "message":  "Email is not registered"
+        }
+
+   #### 200 OK(Invalid Password):
+        {
+          "success": false,
+          "message": "Invalid Password"
+        }
+        
+   #### 400 Bad Request:
+        {
+          "success": false,
+          "message": "Invalid Email or Password"
+        }
+
+
 ### Backend APIs For Task Management
 These APIs allow users to create, view, update, and delete tasks. Below is a detailed description of the endpoints.
 
