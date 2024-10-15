@@ -79,7 +79,7 @@ This endpoint is getting all the tasks stored in the database.
 
 #### Getting the single Task
 #### GET('/single-task/:slug')
-This endpoint is getting all the tasks stored in the database.
+This endpoint is getting the single task stored in the database.
   #### URL: 'http://localhost:8000/api/v1/task/single-task/java-programming'
   #### Method: GET
   #### Response: 
@@ -108,5 +108,42 @@ This endpoint is getting all the tasks stored in the database.
           "error": {}
         }
 
+#### Updating the Task
+#### PUT('/update-task/:id')
+This endpoint is update the task stored in the database.
+  #### URL: 'http://localhost:8000/api/v1/task/update-task/java-programming'
+  #### Method: PUT
+  #### Headers:
+    Content-Type: application/json
+  #### Body:
+    {
+      "title": "Java Programming Language",
+      "description": "Java is a programming Language used in creating the backend of the Full Stack Web Application"
+    }
+  #### Response: 
+  #### 201 Created:
+    {
+      "success": true,
+      "message": "Task is updated successfully",
+      "task": {
+          "_id": ObjectId('670e0d7ac86f58a8b292a44d'),
+          "title": "Java Programming Language",
+          "description": "Java is a programming Language used in creating the backend of the Full Stack Web Application",
+          "slug": "java-programming-language",
+          "createdAt": "2024-10-15T06:36:42.748+00:00",
+          "updatedAt": "2024-10-15T08:06:08.168+00:00"
+        }
+    }
 
+   #### 401 Unauthorized:
+        {
+          "message": "Task Title is Required"
+        }
+
+  #### 500 Internal Server Error:
+        {
+          "success": false,
+          "message": "Error while updating the task",
+          "error": {}
+        }
 
