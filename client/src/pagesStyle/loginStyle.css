@@ -1,0 +1,63 @@
+.login-main{
+    height: 560px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(blue, white);
+}
+
+.login-main .login{
+    height: 400px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+
+.login-main .login h1{
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.login-main .login .login-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-main .login .login-inputs input{
+    height: 40px;
+    width: 300px;
+    text-decoration: none;
+    outline: none;
+    margin: 5px;
+    padding:6px;
+    border-radius: 3px;
+    font-weight: 400;
+    border:none;
+    border-bottom: 2px solid black;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+
+.login-main .login .login-inputs .submit-button-forgot{
+    background-color: black;
+    margin-top: 50px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+
+}.login-main .login .login-inputs .submit-button{
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}

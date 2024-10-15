@@ -1,0 +1,55 @@
+.register-main{
+    height: 560px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(blue, white);
+}
+
+.register-main .register{
+    height: 450px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+
+.register-main .register h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.register-main .register .register-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-main .register .register-inputs input{
+    height: 40px;
+    width: 300px;
+    text-decoration: none;
+    outline: none;
+    margin: 5px;
+    padding:6px;
+    border-radius: 3px;
+    border:none;
+    border-bottom: 2px solid black;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+
+.register-main .register .register-inputs .submit-button{
+    background-color: black;
+    margin-top: 30px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}

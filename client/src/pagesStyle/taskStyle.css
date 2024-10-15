@@ -1,0 +1,139 @@
+.main-create-task{
+    display: flex;
+    width: 100%;
+    height: 77vh;
+}
+
+.main-create-task .task-details{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-create-task .task-details .task-table{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* height: 100%; */
+}
+
+.main-create-task .task-details .task-table tr{
+    border-bottom: 2px solid white;
+    height: 40px;
+}
+
+.main-create-task .task-details .task-table .task-single-row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+.main-create-task .task-details .task-table .task-titles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+    padding-top: 5px;
+}
+
+.main-create-task .task-details .task-table .description{
+    margin-right: 50px;
+}
+
+.main-create-task .task-details .task-table .task-edit button{
+    width: 60px;
+    height: 30px;
+    color: black;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main-create-task .task-details .task-table .task-delete button{
+    width: 60px;
+    height: 30px;
+    color: black;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.main-create-task .task-details h2{
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.task-input-form{
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    height: 40px;
+}
+
+.task-input-form .task-input-box{
+    width: 80%;
+    padding-left: 5px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.task-input-form button{
+    color: rgb(110, 104, 104);
+    width: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-weight: 600;
+    /* font-size: 17px; */
+}
+
+.task-input-form button:hover{
+    color: black;
+}
+
+.task-description{
+    width: 100%;
+    height: 80px;
+    overflow:auto;
+    margin: 10px;
+}
+
+
+@media only screen and (max-width: 880px){
+    .task-input-form{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: 180px;
+    }
+
+    .task-input-form .task-input-box{
+        height: 35px;
+        margin: 5px;
+    }
+
+    .task-input-form button{
+        height: 35px;
+    }
+}
