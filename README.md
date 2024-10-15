@@ -32,12 +32,12 @@ This endpoint creates a new task.
         }
       }
 
-    #### 401 Unauthorized:
+  #### 401 Unauthorized:
         {
           "message": "Title is Required"
         }
 
-    #### 200 OK(Conflict):
+  #### 200 OK(Conflict):
         {
           "success": false,
           "message": "Task with similar title already exists. Select a different task name."
